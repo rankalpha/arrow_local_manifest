@@ -5,6 +5,13 @@
           fetch="https://github.com/wHo-EM-i" />
   <remote name="pix106"
           fetch="https://github.com/pix106" />
+	<remote name="arrow13"
+		      fetch="https://github.com/ArrowOS"
+		      review="https://review.arrowos.net/"
+		      revision="refs/heads/arrow-13.1" />
+
+        <remove-project name="frameworks_base" />
+	      <project path="frameworks/base" name="android_frameworks_base" remote="arrow13" />
   
 <!-- caf blobs -->
         <remove-project name="android_hardware_qcom_audio" />
